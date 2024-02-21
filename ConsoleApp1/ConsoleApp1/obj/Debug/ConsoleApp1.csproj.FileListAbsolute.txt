@@ -1,0 +1,6 @@
+/Users/amandatao/RiderProjects/c# Basic Impl/c-Basic-Impl/ConsoleApp1/ConsoleApp1/bin/Debug/ConsoleApp1.exe
+/Users/amandatao/RiderProjects/c# Basic Impl/c-Basic-Impl/ConsoleApp1/ConsoleApp1/bin/Debug/ConsoleApp1.pdb
+/Users/amandatao/RiderProjects/c# Basic Impl/c-Basic-Impl/ConsoleApp1/ConsoleApp1/obj/Debug/ConsoleApp1.csproj.AssemblyReference.cache
+/Users/amandatao/RiderProjects/c# Basic Impl/c-Basic-Impl/ConsoleApp1/ConsoleApp1/obj/Debug/ConsoleApp1.csproj.CoreCompileInputs.cache
+/Users/amandatao/RiderProjects/c# Basic Impl/c-Basic-Impl/ConsoleApp1/ConsoleApp1/obj/Debug/ConsoleApp1.exe
+/Users/amandatao/RiderProjects/c# Basic Impl/c-Basic-Impl/ConsoleApp1/ConsoleApp1/obj/Debug/ConsoleApp1.pdb
