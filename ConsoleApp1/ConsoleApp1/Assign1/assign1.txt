@@ -79,7 +79,7 @@ minutes = 15778454400 seconds = 15778454400000 milliseconds = 15778454400000000
 microseconds = 15778454400000000000 nanoseconds
 
 
-Explore following topics
+## Explore following topics
 C# Keywords
 Main() and command-line arguments
 Types (C# Programming Guide)
@@ -92,19 +92,49 @@ Nullable reference types
 Controlling Flow and Converting Types
 Test your Knowledge
 1. What happens when you divide an int variable by 0?
+    Arithmetic problem in constant value computation (cannot compile)
+    means trying to distribute a finite quantity over an infinitely small portion,
 2. What happens when you divide a double variable by 0?
+    Infinity! (can be compiled)
+    or -Infinity!
+    the result approaches positive or negative infinity.
 3. What happens when you overflow an int variable, that is, set it to a value beyond its
 range?
+    overflow can cause num become negative 
 4. What is the difference between x = y++; and x = ++y;?
+    x = y++ => assign y,  then add 1
+    x = ++y => increment y then assign to x
 5. What is the difference between break, continue, and return when used inside a loop
 statement?
+    break: will get out of this current loop
+    continue: jump to next element in i, continue the loop
+    return: after seeing return keyword, the source code below return not running even outside the loop
+    
 6. What are the three parts of a for statement and which of them are required?
+    for (initilization; condition; iteration)
+        optional      ; required  ;  optional
+
 7. What is the difference between the = and == operators?
+    = is for assigning value
+    == is for comparing whether the value is equal
+
 8. Does the following statement compile? for ( ; true; ) ;
+    yes, it can be compiled. but it is an infinite loop, with an empty loop body
+    
 9. What does the underscore _ represent in a switch expression?
+    _ is the deafult case, used to match any other case
+
 10. What interface must an object implement to be enumerated over by using the foreach
 statement?
-Practice loops and operators
+    using foreach with IEnumerable<T>;
+    foreach (int number in numbers)
+            {
+                Console.WriteLine(number);
+            }
+    using System.Collections.Generic;
+
+
+## Practice loops and operators
 1. FizzBuzzis a group word game for children to teach them about division. Players take turns
 to count incrementally, replacing any number divisible by three with the word /fizz/, any
 number divisible by five with the word /buzz/, and any number divisible by both with /
@@ -132,6 +162,9 @@ int using this code:
 int guessedNumber = int.Parse(Console.ReadLine());
 Note that the above code will crash the program if the user doesn't type an integer value.
 For this exercise, assume the user will only enter valid guesses.
+
+
+
 2. Print-a-Pyramid.Like the star pattern examples that we saw earlier, create a program that
 will print the following pattern: If you find yourself getting stuck, try recreating the two
 examples that we just talked about in this chapter first. They’re simpler, and you can

@@ -40,15 +40,20 @@
         <Reference Include="System.Xml"/>
     </ItemGroup>
     <ItemGroup>
-        <Compile Include="CenturyConversion\CenturyConversion.cs" />
         <Compile Include="EnumPrac\DaysOfWeek.cs" />
         <Compile Include="EnumPrac\TesterDaysOfWeek.cs" />
+        <Compile Include="FizzBuzzPrac\FizzBuzz.cs" />
+        <Compile Include="GreetingPrac\Greeting.cs" />
         <Compile Include="ParametersImpl\ParamPassing.cs" />
         <Compile Include="Program.cs"/>
         <Compile Include="Properties\AssemblyInfo.cs"/>
+        <Compile Include="PyramidPrac\Pyramid.cs" />
+        <Compile Include="RandomNumberPrac\RandomNumber.cs" />
+        <Compile Include="typesConversion\CenturyConversion.cs" />
     </ItemGroup>
     <ItemGroup>
       <Content Include="Assign1\assign1.txt" />
+      <Content Include="Assign2\assign2.txt" />
     </ItemGroup>
     <ItemGroup>
       <Folder Include="02UnderstandingTypes\" />
