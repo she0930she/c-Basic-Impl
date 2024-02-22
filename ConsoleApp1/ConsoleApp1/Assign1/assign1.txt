@@ -3,12 +3,12 @@ Understanding Data Types
 Test your Knowledge
 1. What type would you choose for the following “numbers”?
 A person’s telephone number: string
-A person’s height:int
+A person’s height: float
 A person’s age:int
-A person’s gender (Male, Female, Prefer Not To Answer): string
-A person’s salary:float
-A book’s ISBN: long
-A book’s price:decimal
+A person’s gender (Male, Female, Prefer Not To Answer): enum
+A person’s salary: decimal
+A book’s ISBN: string
+A book’s price: decimal
 A book’s shipping weight: float
 A country’s population: long
 The number of stars in the universe: long
@@ -16,30 +16,33 @@ The number of employees in each of the small or medium businesses in the
 United Kingdom (up to about 50,000 employees per business): int
 
 2. What are the difference between value type and reference type variables? What is
-boxing and unboxing?
-1. value type directly hold values, ref type hold memory address for the value
-2. value type are stored in stack memory, ref type stored in heap memory
-3. value type will not be collected by garbage collector, ref type will be collected by garbage collector
-4. value type can be created by struct or enum; ref type can be created by class, interface, delegate or array
-5. value type not accept null value; ref type accept null
+boxing and unboxing? 
 
-boxing: converting the value type into type of object or to any interface type
-unboxing: extracts the value type from the object
-process: when CLR boxes a value type, it wraps the value type in System.Object instance and stored in managed heap 
+    1. value type directly hold values, ref type hold memory address for the value
+    2. value type are stored in stack memory, ref type stored in heap memory
+    3. value type will not be collected by garbage collector, ref type will be collected by garbage collector
+    4. value type can be created by struct or enum; ref type can be created by class, interface, delegate or array
+    5. value type not accept null value; ref type accept null
 
- // boxing and unboxing
-int num = 123;
-object obj = num; // boxed int
+    boxing: converting the value type into type of object or to any interface type
+    unboxing: extracts the value type from the object
+    process: when CLR boxes a value type, it wraps the value type in System.Object instance and stored in managed heap 
 
-obj = 123;
-num = (int) obj; //unboxing obj to int
+    // boxing and unboxing
+    int num = 123;
+    object obj = num; // boxed int
+    
+    obj = 123;
+    num = (int) obj; //unboxing obj to int
 
 3. What is meant by the terms managed resource and unmanaged resource in .NET
-managed resource: anything managed by CLR
-unmanaged resource: 
+    managed resource: anything managed by CLR (any of managed objects)
+    unmanaged resource: native resources that are created and lifetime managed outside of CLR
 
 4. Whats the purpose of Garbage Collector in .NET?
-Playing with Console App
+    managing the allocation and release the memory for an application.
+
+## Playing with Console App
 Modify your console application to display a different message. Go ahead and
 intentionally add some mistakes to your program, so you can see what kinds of error
 messages you get from the compiler. The more familiar you are with these messages, and
@@ -51,15 +54,21 @@ console application that asks the user a few questions and then generates some c
 output for them. For instance, your program could generate their "hacker name" by asking
 them their favorite color, their astrology sign, and their street address number. The result
 might be something like "Your hacker name is RedGemini480."
+
+
+
+
 Practice number sizes and ranges
 1. Create a console application project named /02UnderstandingTypes/ that outputs the
 number of bytes in memory that each of the following number types uses, and the
 minimum and maximum values they can have: sbyte, byte, short, ushort, int, uint, long,
 ulong, float, double, and decimal.
 Composite Formatting to learn how to align text in a console application
+
 2. Write program to enter an integer number of centuries and convert it to years, days, hours,
 minutes, seconds, milliseconds, microseconds, nanoseconds. Use an appropriate data
 type for every data conversion. Beware of overflows!
+
 Input: 1
 Output: 1 centuries = 100 years = 36524 days = 876576 hours = 52594560 minutes
 = 3155673600 seconds = 3155673600000 milliseconds = 3155673600000000
@@ -68,6 +77,8 @@ Input: 5
 Output: 5 centuries = 500 years = 182621 days = 4382904 hours = 262974240
 minutes = 15778454400 seconds = 15778454400000 milliseconds = 15778454400000000
 microseconds = 15778454400000000000 nanoseconds
+
+
 Explore following topics
 C# Keywords
 Main() and command-line arguments
@@ -76,6 +87,8 @@ Statements, Expressions, and Operators
 Strings (C# Programming Guide)
 Nullable Types (C# Programming Guide)
 Nullable reference types
+
+
 Controlling Flow and Converting Types
 Test your Knowledge
 1. What happens when you divide an int variable by 0?
