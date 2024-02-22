@@ -1,3 +1,28 @@
+Test your Knowledge
+1. When to use String vs. StringBuilder in C# ?
+    stringBuilder[i]: mutable
+    string: immutable, notnot use string[i]
+    
+2. What is the base class for all arrays in C#?
+    System.Array
+    
+3. How do you sort an array in C#?
+    Array.Sort(numbers);
+
+4. What property of an array object can be used to get the total number of elements in
+an array?
+    arr.Length
+    
+5. Can you store multiple data types in System.Array?
+    yes, use object.
+    object[] arrObj = new object[] { 1, true, 5.00, "ghdj" };
+
+6. What’s the difference between the System.Array.CopyTo() and System.Array.Clone()?
+    both used on creating copies of array.
+    System.Array.CopyTo(): returns nothing(void), it copies one array to another
+    System.Array.Clone(): return a new array object
+
+
 Practice Arrays
 1. Copying an Array
 Write code to create a copy of an array. First, start by creating an initial array. (You can use

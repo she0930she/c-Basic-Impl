@@ -14,20 +14,59 @@ namespace ConsoleApp1
     {
         public static void Main(string[] args)
         {
+            // loop, copy array
+            int[] firArr = { 0,1, 2, 3, 4, 5, 6,7,8,9 };
+            int[] secondArr = new int[firArr.Length];
+            //
+            // for (int i = 0; i < firArr.Length; i++)
+            // {
+            //     secondArr[i] = firArr[i];
+            //     Console.WriteLine($"firstArr: {firArr[i]}");
+            //     Console.WriteLine($"secondArr: {secondArr[i]}");
+            // }
+
+            // copy array
+            int[] originalArray = { 1, 2, 3, 4, 5 };
+
+            // Using CopyTo()
+            int[] copyArray = new int[5];
+            originalArray.CopyTo(copyArray, 0);
+
+            // Using Clone()
+            int[] clonedArray = (int[])originalArray.Clone();
+            
+            
+            
+            // store diff data types
+            object[] arrObj = new object[] { 1, true, 5.00, "ghdj" };
+            // Console.WriteLine(arrObj[1]);
+            // Console.WriteLine(arrObj[3]);
+            
+            // sort array
+            int[] arr2 = new int[] { 99, 5, 1, 47, 0 };
+            Array.Sort(arr2);
+            Console.WriteLine(arr2[0]);
+            Console.WriteLine(arr2.Length);
+            
+            // array
+            int[] arr = new int[] { 1, 2, 3, 4, 5 };
+            // Console.WriteLine(arr[0]);
+            
+            
             // counting
-            for (int i = 1; i <= 4; i++) {
-                // Inner loop for counting up to 24 with the increment based on the outer loop variable
-                for (int j = 0; j <= 24; j += i) {
-                    // Print the current value
-                    Console.Write(j);
-                
-                    // Print comma if it's not the last value
-                    if (j != 24) {
-                        Console.Write(",");
-                    }
-                }
-                Console.WriteLine(); // Move to the next line after each set of numbers
-            }
+            // for (int i = 1; i <= 4; i++) {
+            //     // Inner loop for counting up to 24 with the increment based on the outer loop variable
+            //     for (int j = 0; j <= 24; j += i) {
+            //         // Print the current value
+            //         Console.Write(j);
+            //     
+            //         // Print comma if it's not the last value
+            //         if (j != 24) {
+            //             Console.Write(",");
+            //         }
+            //     }
+            //     Console.WriteLine(); // Move to the next line after each set of numbers
+            // }
             
             // greeting
             DateTime t = new DateTime(1999, 1, 13, 22, 57, 32, 11);
