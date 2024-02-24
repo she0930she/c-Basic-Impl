@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Text;
 using ConsoleApp1.FizzBuzzPrac;
 using ConsoleApp1.GreetingPrac;
 using ConsoleApp1.PyramidPrac;
 using ConsoleApp1.RandomNumberPrac;
+using ConsoleApp1.StringPrac;
 using ConsoleApp1.typesConversion;
 using ConsoleApplication1.EnumPrac;
 using ConsoleApplication1.ParametersImpl;
@@ -14,6 +16,38 @@ namespace ConsoleApp1
     {
         public static void Main(string[] args)
         {
+            // print palindrome text
+            PalindromePrac pp = new PalindromePrac();
+            // string[] tmp = pp.ConvertToStringArr("Hi,exe? ABBA!");
+            // for (int i = 0; i < tmp.Length; i++)
+            // {
+            //     Console.WriteLine(tmp[i]);
+            // }
+            //Console.WriteLine(pp.ConvertToStringArr("Hi,exe? ABBA!"));
+            
+            pp.printPalindromeOnly("Hi,exe? ABBA! Hog fully a string: ExE. Bob");
+            
+            
+            //reverse string
+            ReverseString rs = new ReverseString();
+            //rs.PrintReversedString("alpha365");
+            string s = "kjrge";
+            //Console.WriteLine(rs.ToCharArrayStringReverse(s));
+            
+            
+            
+            
+            string elva= "elva365";
+            char[] wordsArr = elva.ToCharArray();
+            //Console.WriteLine(elva[2]); // ok
+            // foreach (char cha in elva)
+            // {
+            //     Console.WriteLine(cha);
+            // }
+            Console.WriteLine();
+            Console.WriteLine("-----");
+
+            
             // loop, copy array
             int[] firArr = { 0,1, 2, 3, 4, 5, 6,7,8,9 };
             int[] secondArr = new int[firArr.Length];
@@ -45,8 +79,8 @@ namespace ConsoleApp1
             // sort array
             int[] arr2 = new int[] { 99, 5, 1, 47, 0 };
             Array.Sort(arr2);
-            Console.WriteLine(arr2[0]);
-            Console.WriteLine(arr2.Length);
+            // Console.WriteLine(arr2[0]);
+            // Console.WriteLine(arr2.Length);
             
             // array
             int[] arr = new int[] { 1, 2, 3, 4, 5 };

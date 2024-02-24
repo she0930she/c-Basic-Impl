@@ -49,6 +49,8 @@
         <Compile Include="Properties\AssemblyInfo.cs"/>
         <Compile Include="PyramidPrac\Pyramid.cs" />
         <Compile Include="RandomNumberPrac\RandomNumber.cs" />
+        <Compile Include="StringPrac\PalindromePrac.cs" />
+        <Compile Include="StringPrac\ReverseString.cs" />
         <Compile Include="typesConversion\CenturyConversion.cs" />
     </ItemGroup>
     <ItemGroup>
