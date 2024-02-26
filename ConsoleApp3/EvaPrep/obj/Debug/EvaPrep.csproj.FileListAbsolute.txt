@@ -1,0 +1,6 @@
+/Users/amandatao/RiderProjects/c# Basic Impl/c-Basic-Impl/ConsoleApp3/EvaPrep/bin/Debug/EvaPrep.exe
+/Users/amandatao/RiderProjects/c# Basic Impl/c-Basic-Impl/ConsoleApp3/EvaPrep/bin/Debug/EvaPrep.pdb
+/Users/amandatao/RiderProjects/c# Basic Impl/c-Basic-Impl/ConsoleApp3/EvaPrep/obj/Debug/EvaPrep.csproj.AssemblyReference.cache
+/Users/amandatao/RiderProjects/c# Basic Impl/c-Basic-Impl/ConsoleApp3/EvaPrep/obj/Debug/EvaPrep.csproj.CoreCompileInputs.cache
+/Users/amandatao/RiderProjects/c# Basic Impl/c-Basic-Impl/ConsoleApp3/EvaPrep/obj/Debug/EvaPrep.exe
+/Users/amandatao/RiderProjects/c# Basic Impl/c-Basic-Impl/ConsoleApp3/EvaPrep/obj/Debug/EvaPrep.pdb
