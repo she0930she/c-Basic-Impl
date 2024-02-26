@@ -44,9 +44,14 @@
         <Compile Include="DataModel\Customer.cs" />
         <Compile Include="DataModel\Employee.cs" />
         <Compile Include="DataModel\Product.cs" />
+        <Compile Include="ExtensionMethodPrac\ExtensionMethodDemo.cs" />
         <Compile Include="Generics\GenericDemo.cs" />
         <Compile Include="InternalPrac\InternalExample.cs" />
         <Compile Include="InternalPrac\PublicExample.cs" />
+        <Compile Include="OptionalParamPrac\OptionalParamDemo.cs" />
+        <Compile Include="OverrideNonVirtualNonAbstractPrac\ChildOfMyClassNonVirtual.cs" />
+        <Compile Include="OverrideNonVirtualNonAbstractPrac\MyClassNonVirtual.cs" />
+        <Compile Include="PartialClassPrac\PartialClassDemo.cs" />
         <Compile Include="Presentation\ManageCustomer.cs" />
         <Compile Include="Program.cs"/>
         <Compile Include="Properties\AssemblyInfo.cs"/>
@@ -56,6 +61,7 @@
     </ItemGroup>
     <ItemGroup>
       <Content Include="Assign3Prac\Assign3.txt" />
+      <Content Include="Assign4\assign4.txt" />
       <Content Include="c# Day3.txt" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets"/>

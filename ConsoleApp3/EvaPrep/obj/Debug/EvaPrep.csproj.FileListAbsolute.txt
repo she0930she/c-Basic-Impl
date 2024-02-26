@@ -4,3 +4,6 @@
 /Users/amandatao/RiderProjects/c# Basic Impl/c-Basic-Impl/ConsoleApp3/EvaPrep/obj/Debug/EvaPrep.csproj.CoreCompileInputs.cache
 /Users/amandatao/RiderProjects/c# Basic Impl/c-Basic-Impl/ConsoleApp3/EvaPrep/obj/Debug/EvaPrep.exe
 /Users/amandatao/RiderProjects/c# Basic Impl/c-Basic-Impl/ConsoleApp3/EvaPrep/obj/Debug/EvaPrep.pdb
+/Users/amandatao/RiderProjects/c# Basic Impl/c-Basic-Impl/ConsoleApp3/EvaPrep/bin/Debug/ConsoleApp3.exe
+/Users/amandatao/RiderProjects/c# Basic Impl/c-Basic-Impl/ConsoleApp3/EvaPrep/bin/Debug/ConsoleApp3.pdb
+/Users/amandatao/RiderProjects/c# Basic Impl/c-Basic-Impl/ConsoleApp3/EvaPrep/obj/Debug/EvaPrep.csproj.CopyComplete
