@@ -62,5 +62,13 @@ namespace ConsoleApplication1.ParametersImpl
             return sum;
         }
         
+        public void PrintParamString(params string[] arr)
+        {
+            for (int i = 0; i < arr.Length; i++)
+            {
+                Console.WriteLine(arr[i]);
+            }
+        }
+        
     }
 }

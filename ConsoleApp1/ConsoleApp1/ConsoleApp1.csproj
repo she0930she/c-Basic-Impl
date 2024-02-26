@@ -52,6 +52,8 @@
         <Compile Include="StringPrac\PalindromePrac.cs" />
         <Compile Include="StringPrac\ReverseString.cs" />
         <Compile Include="typesConversion\CenturyConversion.cs" />
+        <Compile Include="VirtualMethodPrac\ChildFromVirtual.cs" />
+        <Compile Include="VirtualMethodPrac\VirtualMethodDemo.cs" />
     </ItemGroup>
     <ItemGroup>
       <Content Include="Assign1\assign1.txt" />

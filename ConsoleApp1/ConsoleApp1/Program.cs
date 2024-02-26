@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using ConsoleApp1.FizzBuzzPrac;
 using ConsoleApp1.GreetingPrac;
@@ -219,9 +220,9 @@ namespace ConsoleApp1
             
 
             // What is the difference between x = y++; and x = ++y;?
-            int x = 5;
-            int y = ++x;
-            Console.WriteLine(y+", "+ x);
+            int x11 = 5;
+            int y11 = ++x11;
+            Console.WriteLine(y11+", "+ x11);
             // increments the value of x,
             // and then assigns it to y.
             
@@ -277,16 +278,36 @@ namespace ConsoleApp1
 
 
             Console.WriteLine("********");
+ 
+
+            
+
+
+            
+            // pass by ref
             ParamPassing demo = new ParamPassing();
-            // out Param
+            int x = 30;
+            int y = 10;
+            string c = "hello";
+            // Console.WriteLine($"Before calling passing by value method: x={x}, y={y}, c={c}");
+            // demo.PassingByValue(x, y, c);
+            // Console.WriteLine($"After calling passing by value method: x={x}, y={y}, c={c}");
+            // Console.WriteLine("______________________________");
+            // Console.WriteLine($"Before calling passing by reference method: x={x}, y={y}, c={c}");
+            // demo.PassingByReference(ref x, ref y, ref c);
+            // Console.WriteLine($"After calling passing by reference method: x={x}, y={y}, c={c}");
+            //out mode
             string str;
             // Console.WriteLine(demo.IsAuthentic("Anjila", "Antra123", out str));
-            // Console.WriteLine(str);
+            // Console.WriteLine("str:"+ str);
+            //Param
+            // demo.PrintParamString("John", "abc@gmail.con", "seattle", "WA");
             // Console.WriteLine(demo.AddNumbers(20,30));
             // Console.WriteLine(demo.AddNumbers(20,30,30,40));
 
             //demo.AddTwoNumbers(1,2);
             //demo.AddThreeNumbers(1,2,3);
+            
             
             
             DaysOfWeek today = DaysOfWeek.Tuesday;
@@ -302,6 +323,28 @@ namespace ConsoleApp1
 
             // Console.WriteLine("hello world"); //cw tab
             // Console.WriteLine("try shortcut"); // command+ option+ /
+            
+            // Pagination
+            // Sample data (list of integers)
+            var data = Enumerable.Range(1, 100); // Generating numbers from 1 to 100
+        
+            // Pagination parameters
+            int pageSize = 10; // Number of items per page
+            int pageNumber = 3; // Page number to retrieve (0-based index)
+
+            // Calculate how many elements to skip based on page size and number
+            int itemsToSkip = pageNumber * pageSize;
+
+            // Retrieve a page of data
+            var pageOfData = data.Skip(itemsToSkip).Take(pageSize);
+
+            // Display the page of data
+            Console.WriteLine($"Page {pageNumber + 1}:");
+            foreach (var item in pageOfData)
+            {
+                Console.WriteLine(item);
+            }
+        
         }
     }
 }
