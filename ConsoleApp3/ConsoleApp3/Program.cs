@@ -1,11 +1,15 @@
 ﻿using System;
+using System.Collections.Generic;
 using ConsoleApp3.ExtensionMethodPrac;
+using ConsoleApp3.FibonacciPrac;
 using ConsoleApp3.Generics;
 using ConsoleApp3.InternalPrac;
+using ConsoleApp3.OOPPrac;
 using ConsoleApp3.OptionalParamPrac;
 using ConsoleApp3.OverrideNonVirtualNonAbstractPrac;
 using ConsoleApp3.PartialClassPrac;
 using ConsoleApp3.Presentation;
+using ConsoleApp3.ReverseArrayPrac;
 
 namespace ConsoleApp3
 {
@@ -13,6 +17,59 @@ namespace ConsoleApp3
     {
         public static void Main(string[] args)
         {
+            // OOP
+            Person p10 = new Person();
+            p10.Id = 3;
+            p10.SetAddress("4488 skyline");
+            p10.SetAddress("7746 Lonheed way");
+            p10.GetAddress();
+            p10.TesterGetAddress();
+            Student s10 = new Student();
+            Student s11 = new Student();
+            s10.Id = 10;
+            
+            
+            Course c10 = new Course();
+            Course c11 = new Course();
+            c10.Id = 10;
+            c10.CourseName = "Chemistry";
+            c11.Id = 11;
+            c11.CourseName = "Math";
+            s10.CourseList = new List<Course>();
+            s10.CourseList.Add(c10);
+            s10.CourseList.Add(c11);
+            Console.WriteLine(s10.CourseList);
+            s10.GetCourseList();
+
+            
+            
+            // Dictionary
+            Dictionary<int, string> dict1 = new Dictionary<int, string>();
+            dict1[1] = "Jeff";
+            dict1[3] = "Mary";
+            // Console.WriteLine(dict1);
+            // foreach (var item in dict1)
+            // {
+            //     Console.WriteLine(item.Key);
+            //     Console.WriteLine(item.Value);
+            // }
+            // Console.WriteLine();
+            
+            // Fibonacci sequence
+            FibonacciDemo fd = new FibonacciDemo();
+            // Console.WriteLine(fd.PrintFib(2));
+            // Console.WriteLine(fd.PrintFib(3));
+            // Console.WriteLine(fd.PrintFib(8));
+            // Console.WriteLine(fd.Memorization(3));
+            
+            
+            //reverse array
+            ReverseArrayDemo ra = new ReverseArrayDemo();
+            int[] numbers = ra.GenerateNumbers(10);
+            // ra.PrintNumbers(numbers);
+            // ra.Reverse(numbers);
+            // ra.PrintNumbers(numbers);
+            
             
             //non-virtual
             ChildOfMyClassNonVirtual cnv = new ChildOfMyClassNonVirtual();
@@ -29,8 +86,8 @@ namespace ConsoleApp3
             var tuplePrac = (1, "John", false);
             //type seeTypeTuple = typeof(tuplePrac);
             int num10 = 10;
-            Console.WriteLine(tuplePrac);
-            Console.WriteLine(tuplePrac.GetType());
+            // Console.WriteLine(tuplePrac);
+            // Console.WriteLine(tuplePrac.GetType());
             
             // partial class
             PartialClassDemo pc = new PartialClassDemo();

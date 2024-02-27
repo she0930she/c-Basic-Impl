@@ -45,9 +45,22 @@
         <Compile Include="DataModel\Employee.cs" />
         <Compile Include="DataModel\Product.cs" />
         <Compile Include="ExtensionMethodPrac\ExtensionMethodDemo.cs" />
+        <Compile Include="FibonacciPrac\FibonacciDemo.cs" />
         <Compile Include="Generics\GenericDemo.cs" />
         <Compile Include="InternalPrac\InternalExample.cs" />
         <Compile Include="InternalPrac\PublicExample.cs" />
+        <Compile Include="OOPEntities\Grade.cs" />
+        <Compile Include="OOPPrac\Course.cs" />
+        <Compile Include="OOPPrac\CourseEnrollment.cs" />
+        <Compile Include="OOPPrac\Department.cs" />
+        <Compile Include="OOPPrac\Instructor.cs" />
+        <Compile Include="OOPPrac\Person.cs" />
+        <Compile Include="OOPPrac\Student.cs" />
+        <Compile Include="OOPServices\ICourseService.cs" />
+        <Compile Include="OOPServices\IDepartmentService.cs" />
+        <Compile Include="OOPServices\IInstructorService.cs" />
+        <Compile Include="OOPServices\IPersonService.cs" />
+        <Compile Include="OOPServices\IStudentService.cs" />
         <Compile Include="OptionalParamPrac\OptionalParamDemo.cs" />
         <Compile Include="OverrideNonVirtualNonAbstractPrac\ChildOfMyClassNonVirtual.cs" />
         <Compile Include="OverrideNonVirtualNonAbstractPrac\MyClassNonVirtual.cs" />
@@ -58,6 +71,7 @@
         <Compile Include="Repositories\CustomerRepository.cs" />
         <Compile Include="Repositories\IRepository.cs" />
         <Compile Include="Repositories\ProductRepository.cs" />
+        <Compile Include="ReverseArrayPrac\ReverseArrayDemo.cs" />
     </ItemGroup>
     <ItemGroup>
       <Content Include="Assign3Prac\Assign3.txt" />
