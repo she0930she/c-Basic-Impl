@@ -11,6 +11,7 @@ using ConsoleApp3.OverrideNonVirtualNonAbstractPrac;
 using ConsoleApp3.PartialClassPrac;
 using ConsoleApp3.Presentation;
 using ConsoleApp3.ReverseArrayPrac;
+using ConsoleApp3.StackPrac;
 
 namespace ConsoleApp3
 {
@@ -18,17 +19,49 @@ namespace ConsoleApp3
     {
         public static void Main(string[] args)
         {
+            // List
+            List<int> number10 = new List<int> {   22, 33, 4, 55 };
+
+            var evenNumber = number10.Find(x => x  == 0);
+            Console.WriteLine(evenNumber); // Output: 
+            Console.WriteLine();
+            
+            // custom Stack
+            MyStack<int> myStack = new MyStack<int>();
+            Console.WriteLine(myStack.Count());
+            myStack.Push(5);
+            myStack.Push(10);
+            Console.WriteLine(myStack.Count());
+            myStack.Pop();
+            Console.WriteLine(myStack.Count());
+            
+            
+            // List
+            List<string> stringList = new List<string>();
+            stringList.Add("Kenny");
+            stringList.Add("Barbie");
+            stringList.Add("JJ");
+            stringList.Add("Leon");
+            stringList.Remove("Kenny");
+            stringList.RemoveAt(2); // idx
+            foreach (var name in stringList)
+            {
+                Console.WriteLine(name);
+            }
+            
+            
+            
             // Color and Ball
             Color color10 = new Color(3, 100, 88);
             Color color11 = new Color(200, 10, 8);
-            Console.WriteLine(color10.GetGrayScale());
-            Ball b10 = new Ball();
-            b10.Color = color10;
-            b10.Size = 10;
-            b10.AddOneThrowCount();
-            b10.MakeBallSizeZero();
-            Console.WriteLine(b10.Size);
-            
+            // Console.WriteLine(color10.GetGrayScale());
+            // Ball b10 = new Ball();
+            // b10.Color = color10;
+            // b10.Size = 10;
+            // b10.AddOneThrowCount();
+            // b10.MakeBallSizeZero();
+            // Console.WriteLine(b10.Size);
+            //
             
             
             
