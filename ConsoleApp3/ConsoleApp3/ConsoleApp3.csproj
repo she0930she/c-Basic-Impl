@@ -40,6 +40,8 @@
         <Reference Include="System.Xml"/>
     </ItemGroup>
     <ItemGroup>
+        <Compile Include="ColorAndBall\Ball.cs" />
+        <Compile Include="ColorAndBall\Color.cs" />
         <Compile Include="DataModel\Category.cs" />
         <Compile Include="DataModel\Customer.cs" />
         <Compile Include="DataModel\Employee.cs" />

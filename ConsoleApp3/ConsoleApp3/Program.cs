@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using ConsoleApp3.ColorAndBall;
 using ConsoleApp3.ExtensionMethodPrac;
 using ConsoleApp3.FibonacciPrac;
 using ConsoleApp3.Generics;
@@ -17,6 +18,20 @@ namespace ConsoleApp3
     {
         public static void Main(string[] args)
         {
+            // Color and Ball
+            Color color10 = new Color(3, 100, 88);
+            Color color11 = new Color(200, 10, 8);
+            Console.WriteLine(color10.GetGrayScale());
+            Ball b10 = new Ball();
+            b10.Color = color10;
+            b10.Size = 10;
+            b10.AddOneThrowCount();
+            b10.MakeBallSizeZero();
+            Console.WriteLine(b10.Size);
+            
+            
+            
+            
             // OOP
             Person p10 = new Person();
             p10.Id = 3;
