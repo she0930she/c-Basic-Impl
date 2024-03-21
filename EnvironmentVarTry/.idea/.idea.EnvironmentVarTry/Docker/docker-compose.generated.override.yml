@@ -1,0 +1,40 @@
+# This is a generated file. Not intended for manual editing.
+services:
+  environmentapi:
+    build:
+      context: "/Users/amandatao/RiderProjects/WebProgramming/c-Basic-Impl/EnvironmentVarTry"
+      dockerfile: "EnvironmentAPI/Dockerfile"
+      target: "base"
+    command: []
+    entrypoint:
+    - "dotnet"
+    - "/app/bin/Debug/net7.0/EnvironmentAPI.dll"
+    environment:
+      ASPNETCORE_ENVIRONMENT: "Development"
+      DOTNET_USE_POLLING_FILE_WATCHER: "true"
+    image: "environmentapi:dev"
+    ports: []
+    volumes:
+    - "/Users/amandatao/.nuget/packages:/root/.nuget/packages"
+    - "/Users/amandatao/RiderProjects/WebProgramming/c-Basic-Impl/EnvironmentVarTry/EnvironmentAPI:/app:rw"
+    - "/Users/amandatao/RiderProjects/WebProgramming/c-Basic-Impl/EnvironmentVarTry:/src:rw"
+    working_dir: "/app"
+  regionresponseapi:
+    build:
+      context: "/Users/amandatao/RiderProjects/WebProgramming/c-Basic-Impl/EnvironmentVarTry"
+      dockerfile: "RegionResponseAPI/Dockerfile"
+      target: "base"
+    command: []
+    entrypoint:
+    - "dotnet"
+    - "/app/bin/Debug/net7.0/RegionResponseAPI.dll"
+    environment:
+      ASPNETCORE_ENVIRONMENT: "Development"
+      DOTNET_USE_POLLING_FILE_WATCHER: "true"
+    image: "regionresponseapi:dev"
+    ports: []
+    volumes:
+    - "/Users/amandatao/.nuget/packages:/root/.nuget/packages"
+    - "/Users/amandatao/RiderProjects/WebProgramming/c-Basic-Impl/EnvironmentVarTry/RegionResponseAPI:/app:rw"
+    - "/Users/amandatao/RiderProjects/WebProgramming/c-Basic-Impl/EnvironmentVarTry:/src:rw"
+    working_dir: "/app"

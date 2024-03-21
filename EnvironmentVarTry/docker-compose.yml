@@ -1,0 +1,16 @@
+﻿services:
+  environmentapi:
+    image: environmentapi
+    build:
+      context: .
+      dockerfile: EnvironmentAPI/Dockerfile
+    ports:
+      - 1432:80
+  
+  regionresponseapi:
+    image: regionresponseapi
+    build:
+      context: .
+      dockerfile: RegionResponseAPI/Dockerfile
+    ports:
+      - 1430:80
