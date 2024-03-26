@@ -1,6 +1,17 @@
 Ocelot.json is the configuration file for routing each individual microservices
 
-
+line 14
+    ,
+      "RateLimitOptions": {
+        "ClientWhitelist": [],
+        "EnableRateLimiting": true,
+        "Period": "1m",
+        "PeriodTimespan": 60,
+        "Limit": 3
+      },
+      "RouteClaimsRequirement": {
+        "Role": "Admin"
+      }
 
 after, line 16
 //    {

@@ -11,17 +11,7 @@
         }
       ],
       "DownstreamPathTemplate": "/api/region"
-    ,
-      "RateLimitOptions": {
-        "ClientWhitelist": [],
-        "EnableRateLimiting": true,
-        "Period": "1m",
-        "PeriodTimespan": 60,
-        "Limit": 3
-      },
-      "RouteClaimsRequirement": {
-        "Role": "Admin"
-      }
+
     },
 
     {
