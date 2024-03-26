@@ -1,0 +1,56 @@
+{
+  "Routes": [
+    {
+      "UpstreamPathTemplate": "/api/region",
+      "UpstreamHttpMethod": ["Get", "Post", "Put"],
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "environmentapi",
+          "Port": 80
+        }
+      ],
+      "DownstreamPathTemplate": "/api/region"
+    ,
+      "RateLimitOptions": {
+        "ClientWhitelist": [],
+        "EnableRateLimiting": true,
+        "Period": "1m",
+        "PeriodTimespan": 60,
+        "Limit": 3
+      },
+      "RouteClaimsRequirement": {
+        "Role": "Admin"
+      }
+    },
+
+    {
+      "UpstreamPathTemplate": "/api/regionresponse",
+      "UpstreamHttpMethod": ["Get", "Delete"],
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "regionresponseapi",
+          "Port": 80
+        }
+      ],
+      "DownstreamPathTemplate": "/api/regionresponse"
+    },
+    {
+      "UpstreamPathTemplate": "/api/account",
+      "UpstreamHttpMethod": ["Get", "Post", "Put"],
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "authenticationapi",
+          "Port": 80
+        }
+      ],
+      "DownstreamPathTemplate": "/api/account"
+    }
+
+  ], 
+  "GlobalConfiguration": {
+    "BaseUrl": "http://localhost:1440"
+  }
+}

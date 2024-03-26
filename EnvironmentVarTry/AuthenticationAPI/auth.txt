@@ -1,0 +1,16 @@
+steps to connect authAPI, customerAPI and APIGateway
+1. create JWTAuthManager class library
+    1-1. create generateToken() method
+    1-2. create service extension method
+2. create AuthMicroservice
+    2-1. create AccountController
+            create token
+    2-2. update Program.cs
+3. update ocelot.json
+4. update docker-compose.yml
+5. update target controller needs [Authorize] annotation
+    4-1. update RegionController
+    4-2. update Program.cs
+    
+* if want to add authentication in APIGateway, then replace step 5 with APIGateway
+ 

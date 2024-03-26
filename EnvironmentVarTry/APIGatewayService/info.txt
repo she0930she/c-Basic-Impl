@@ -1,0 +1,19 @@
+Ocelot.json is the configuration file for routing each individual microservices
+
+
+
+after, line 16
+//    {
+//      "UpstreamPathTemplate": "/api/customer/{id}",
+//      "UpstreamHttpMethod": ["Get", "Post", "Put"],
+//      "DownstreamScheme": "http",
+//      "DownstreamHostAndPorts": [
+//        {
+//          "Host": "environmentapi",
+//          "Port": 80
+//        }
+//      ],
+//      "DownstreamPathTemplate": "/api/customer/{id}"
+//    },
+
+

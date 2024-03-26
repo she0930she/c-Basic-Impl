@@ -1,0 +1,12 @@
+## config apiGateway
+
+1. create APIGateway empty coreWebAPI
+2. update program.cs
+3. install ocelot thru Nuget
+4. create ocelot.json
+    list the endpoint wants to be included in APIGateway endpoint
+5. update docker-compose.yml
+
+
+## Authentication & JWT
+

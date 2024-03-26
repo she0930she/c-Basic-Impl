@@ -1,0 +1,3 @@
+JwtAuthManager:
+    this library create a token, verify userName and passW
+I want to use this on every service level, so create an extension method

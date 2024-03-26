@@ -1,4 +1,5 @@
 using EnvironmentAPI;
+using JwtAuthenticationManager;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -18,6 +19,7 @@ builder.Services.AddDbContext<EShopDbContext>(option =>
     //option.UseSqlServer(builder.Configuration.GetConnectionString("EnvMicroDb"));
 });
 builder.Services.AddScoped<IRegionRepoAsync<Region>, RegionRepoAsync>();
+builder.Services.AddCustomJwtAuthentication();  // Service extension Method
 
 
 var app = builder.Build();
@@ -30,6 +32,9 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+// turn on authentication
+app.UseAuthentication();
 
 app.UseAuthorization();
 

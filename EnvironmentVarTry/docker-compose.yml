@@ -4,13 +4,42 @@
     build:
       context: .
       dockerfile: EnvironmentAPI/Dockerfile
-    ports:
-      - 1432:80
+
   
   regionresponseapi:
     image: regionresponseapi
     build:
       context: .
       dockerfile: RegionResponseAPI/Dockerfile
+
+  
+  orderapi:
+    image: orderapi
+    build:
+      context: .
+      dockerfile: OrderMicroservice/OrderAPI/Dockerfile
     ports:
-      - 1430:80
+      - 1435:80
+  
+  inventoryapi:
+    image: inventoryapi
+    build:
+      context: .
+      dockerfile: InventoryMicroservice/InventoryAPI/Dockerfile
+    ports:
+      - 1436:80
+  
+  apigatewayservice:
+    image: apigatewayservice
+    build:
+      context: .
+      dockerfile: APIGatewayService/Dockerfile
+    ports:
+      - 1450:80
+  
+  
+  authenticationapi:
+    image: authenticationapi
+    build:
+      context: .
+      dockerfile: AuthenticationAPI/Dockerfile

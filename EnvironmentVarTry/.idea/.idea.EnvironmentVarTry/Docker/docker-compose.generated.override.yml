@@ -1,5 +1,43 @@
 # This is a generated file. Not intended for manual editing.
 services:
+  apigatewayservice:
+    build:
+      context: "/Users/amandatao/RiderProjects/WebProgramming/c-Basic-Impl/EnvironmentVarTry"
+      dockerfile: "APIGatewayService/Dockerfile"
+      target: "base"
+    command: []
+    entrypoint:
+    - "dotnet"
+    - "/app/bin/Debug/net7.0/APIGatewayService.dll"
+    environment:
+      ASPNETCORE_ENVIRONMENT: "Development"
+      DOTNET_USE_POLLING_FILE_WATCHER: "true"
+    image: "apigatewayservice:dev"
+    ports: []
+    volumes:
+    - "/Users/amandatao/.nuget/packages:/root/.nuget/packages"
+    - "/Users/amandatao/RiderProjects/WebProgramming/c-Basic-Impl/EnvironmentVarTry/APIGatewayService:/app:rw"
+    - "/Users/amandatao/RiderProjects/WebProgramming/c-Basic-Impl/EnvironmentVarTry:/src:rw"
+    working_dir: "/app"
+  authenticationapi:
+    build:
+      context: "/Users/amandatao/RiderProjects/WebProgramming/c-Basic-Impl/EnvironmentVarTry"
+      dockerfile: "AuthenticationAPI/Dockerfile"
+      target: "base"
+    command: []
+    entrypoint:
+    - "dotnet"
+    - "/app/bin/Debug/net7.0/AuthenticationAPI.dll"
+    environment:
+      ASPNETCORE_ENVIRONMENT: "Development"
+      DOTNET_USE_POLLING_FILE_WATCHER: "true"
+    image: "authenticationapi:dev"
+    ports: []
+    volumes:
+    - "/Users/amandatao/.nuget/packages:/root/.nuget/packages"
+    - "/Users/amandatao/RiderProjects/WebProgramming/c-Basic-Impl/EnvironmentVarTry/AuthenticationAPI:/app:rw"
+    - "/Users/amandatao/RiderProjects/WebProgramming/c-Basic-Impl/EnvironmentVarTry:/src:rw"
+    working_dir: "/app"
   environmentapi:
     build:
       context: "/Users/amandatao/RiderProjects/WebProgramming/c-Basic-Impl/EnvironmentVarTry"
@@ -17,6 +55,44 @@ services:
     volumes:
     - "/Users/amandatao/.nuget/packages:/root/.nuget/packages"
     - "/Users/amandatao/RiderProjects/WebProgramming/c-Basic-Impl/EnvironmentVarTry/EnvironmentAPI:/app:rw"
+    - "/Users/amandatao/RiderProjects/WebProgramming/c-Basic-Impl/EnvironmentVarTry:/src:rw"
+    working_dir: "/app"
+  inventoryapi:
+    build:
+      context: "/Users/amandatao/RiderProjects/WebProgramming/c-Basic-Impl/EnvironmentVarTry"
+      dockerfile: "InventoryMicroservice/InventoryAPI/Dockerfile"
+      target: "base"
+    command: []
+    entrypoint:
+    - "dotnet"
+    - "/app/bin/Debug/net7.0/InventoryAPI.dll"
+    environment:
+      ASPNETCORE_ENVIRONMENT: "Development"
+      DOTNET_USE_POLLING_FILE_WATCHER: "true"
+    image: "inventoryapi:dev"
+    ports: []
+    volumes:
+    - "/Users/amandatao/.nuget/packages:/root/.nuget/packages"
+    - "/Users/amandatao/RiderProjects/WebProgramming/c-Basic-Impl/EnvironmentVarTry/InventoryMicroservice/InventoryAPI:/app:rw"
+    - "/Users/amandatao/RiderProjects/WebProgramming/c-Basic-Impl/EnvironmentVarTry:/src:rw"
+    working_dir: "/app"
+  orderapi:
+    build:
+      context: "/Users/amandatao/RiderProjects/WebProgramming/c-Basic-Impl/EnvironmentVarTry"
+      dockerfile: "OrderMicroservice/OrderAPI/Dockerfile"
+      target: "base"
+    command: []
+    entrypoint:
+    - "dotnet"
+    - "/app/bin/Debug/net7.0/OrderAPI.dll"
+    environment:
+      ASPNETCORE_ENVIRONMENT: "Development"
+      DOTNET_USE_POLLING_FILE_WATCHER: "true"
+    image: "orderapi:dev"
+    ports: []
+    volumes:
+    - "/Users/amandatao/.nuget/packages:/root/.nuget/packages"
+    - "/Users/amandatao/RiderProjects/WebProgramming/c-Basic-Impl/EnvironmentVarTry/OrderMicroservice/OrderAPI:/app:rw"
     - "/Users/amandatao/RiderProjects/WebProgramming/c-Basic-Impl/EnvironmentVarTry:/src:rw"
     working_dir: "/app"
   regionresponseapi:

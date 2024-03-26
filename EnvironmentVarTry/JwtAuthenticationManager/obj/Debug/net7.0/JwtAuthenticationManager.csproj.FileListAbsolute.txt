@@ -1,0 +1,12 @@
+/Users/amandatao/RiderProjects/WebProgramming/c-Basic-Impl/EnvironmentVarTry/JwtAuthenticationManager/bin/Debug/net7.0/JwtAuthenticationManager.deps.json
+/Users/amandatao/RiderProjects/WebProgramming/c-Basic-Impl/EnvironmentVarTry/JwtAuthenticationManager/bin/Debug/net7.0/JwtAuthenticationManager.dll
+/Users/amandatao/RiderProjects/WebProgramming/c-Basic-Impl/EnvironmentVarTry/JwtAuthenticationManager/bin/Debug/net7.0/JwtAuthenticationManager.pdb
+/Users/amandatao/RiderProjects/WebProgramming/c-Basic-Impl/EnvironmentVarTry/JwtAuthenticationManager/obj/Debug/net7.0/JwtAuthenticationManager.csproj.AssemblyReference.cache
+/Users/amandatao/RiderProjects/WebProgramming/c-Basic-Impl/EnvironmentVarTry/JwtAuthenticationManager/obj/Debug/net7.0/JwtAuthenticationManager.GeneratedMSBuildEditorConfig.editorconfig
+/Users/amandatao/RiderProjects/WebProgramming/c-Basic-Impl/EnvironmentVarTry/JwtAuthenticationManager/obj/Debug/net7.0/JwtAuthenticationManager.AssemblyInfoInputs.cache
+/Users/amandatao/RiderProjects/WebProgramming/c-Basic-Impl/EnvironmentVarTry/JwtAuthenticationManager/obj/Debug/net7.0/JwtAuthenticationManager.AssemblyInfo.cs
+/Users/amandatao/RiderProjects/WebProgramming/c-Basic-Impl/EnvironmentVarTry/JwtAuthenticationManager/obj/Debug/net7.0/JwtAuthenticationManager.csproj.CoreCompileInputs.cache
+/Users/amandatao/RiderProjects/WebProgramming/c-Basic-Impl/EnvironmentVarTry/JwtAuthenticationManager/obj/Debug/net7.0/JwtAuthenticationManager.dll
+/Users/amandatao/RiderProjects/WebProgramming/c-Basic-Impl/EnvironmentVarTry/JwtAuthenticationManager/obj/Debug/net7.0/refint/JwtAuthenticationManager.dll
+/Users/amandatao/RiderProjects/WebProgramming/c-Basic-Impl/EnvironmentVarTry/JwtAuthenticationManager/obj/Debug/net7.0/JwtAuthenticationManager.pdb
+/Users/amandatao/RiderProjects/WebProgramming/c-Basic-Impl/EnvironmentVarTry/JwtAuthenticationManager/obj/Debug/net7.0/ref/JwtAuthenticationManager.dll

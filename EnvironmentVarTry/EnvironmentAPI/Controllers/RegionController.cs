@@ -1,9 +1,13 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace EnvironmentAPI.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]
+//[Authorize] // all API here need authorized, [Authorize("Admin")]
+[Authorize("Admin")]
+//[Authorize("Admin,User")] both need authorize 
 public class RegionController: ControllerBase
 {
     private readonly IRegionRepoAsync<Region> _regRepoAsync;
